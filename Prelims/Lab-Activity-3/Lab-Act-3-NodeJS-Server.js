@@ -8,7 +8,7 @@ var server = http.createServer(function (req, res) {
   if (req.url == '/') {
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(
-      '<html><body><h1>This is Home Page.</h1><p>Created by Rolyn Joyce Fernan.</p></body></html>'
+      '<html><body><h1 style="border:2px solid Tomato;">This is Home Page.</h1><p>Created by Rolyn Joyce Fernan.</p></body></html>'
     );
     res.end();
   } else if (req.url == '/student') {
